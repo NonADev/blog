@@ -3,35 +3,34 @@
 }
 
 .homepage-capsule {
-    background-color: #091931;
+    background-color: #1c2025;
     min-height: 100vh;
+    width: 100%;
 }
 
 .homepage-nav {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 0 40px;
+    height: 100px;
 
     /* TODO: adicionar essa boxshadow quando scollar para cima */
     /* box-shadow: 0 10px 15px -10px rgba(7, 7, 27, 0.5); */
 }
 
 .homepage-logo-display {
-    display: flex;
+    display: inherit;
     align-items: center;
 }
 
 .homepage-logo-display h2, .homepage-logo-display img, .homepage-logo-display {
-    margin-left: 15px;
     text-decoration: none;
     color: #fff;
 }
 
 .homepage-link-colection {
-    width: 30%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -42,8 +41,24 @@
     transition: var(--transition);
 }
 
+.homepage-link-colection a, .homepage-link-colection a:visited, .homepage-link-colection button {
+    font-size: 14px;
+}
+
+.homepage-link-colection button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 11px 15px;
+}
+
 @media (max-width: 768px) {
     .homepage-link-colection {
         display: none;
+    }
+    
+    .homepage-burguer-button {
+        display: block;
     }
 }
