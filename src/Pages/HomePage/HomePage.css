@@ -1,0 +1,49 @@
+:root {
+    --transition: all 0.25s cubic-bezier(.17,.67,.83,.67);
+}
+
+.homepage-capsule {
+    background-color: #091931;
+    min-height: 100vh;
+}
+
+.homepage-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    /* TODO: adicionar essa boxshadow quando scollar para cima */
+    /* box-shadow: 0 10px 15px -10px rgba(7, 7, 27, 0.5); */
+}
+
+.homepage-logo-display {
+    display: flex;
+    align-items: center;
+}
+
+.homepage-logo-display h2, .homepage-logo-display img, .homepage-logo-display {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.homepage-link-colection {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homepage-link-colection a, .homepage-link-colection a:visited {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #fff;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .homepage-link-colection {
+        display: none;
+    }
+}
