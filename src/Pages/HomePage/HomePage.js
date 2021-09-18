@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
 import './HomePage.css';
 
 export default class HomePage extends Component {
@@ -15,6 +14,7 @@ export default class HomePage extends Component {
                         <a href="#2">About</a>
                         <a href="#3">Portifolio</a>
                         <a href="#4">Contact</a>
+                        <button>Resume</button>
                     </div>
                 </nav>
             </div>
