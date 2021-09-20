@@ -1,5 +1,10 @@
+/* USAR COMO REFERENCIA */
+/* https://brittanychiang.com/#content */
+
 :root {
     --transition: all 0.25s cubic-bezier(.17,.67,.83,.67);
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
 }
 
 .homepage-capsule {
@@ -12,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    height: 100px;
+    height: var(--nav-height);
 
     /* TODO: adicionar essa boxshadow quando scollar para cima */
     /* box-shadow: 0 10px 15px -10px rgba(7, 7, 27, 0.5); */
