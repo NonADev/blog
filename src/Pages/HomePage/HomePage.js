@@ -6,17 +6,25 @@ export default class HomePage extends Component {
         return (
             <div className="homepage-capsule">
                 <nav className="homepage-nav">
-                    <a href="#1" className="homepage-logo-display">
-                        <img src="favicon.ico" alt="icone" />
-                        <h2>_nonadev</h2>
-                    </a>
+                    <div className="homepage-logo-display">
+                        <a href="#1">
+                            <img src="favicon.ico" alt="icone" />
+                        </a>
+                    </div>
                     <div className="homepage-link-colection">
-                        <a href="#2">About</a>
-                        <a href="#3">Portifolio</a>
-                        <a href="#4">Contact</a>
-                        <button>Resume</button>
+                        <a href="#2">ABOUT</a>
+                        <a href="#3">PORTFOLIO</a>
+                        <a href="#4">CONTACT</a>
+                        <a href="#5" className="homepage-link-colection-button">RESUME</a>
                     </div>
                 </nav>
+                <div className="homepage-body">
+                    <div className="homepage-presentation-display">
+                        <h1>Hello, i'm <span className="homepage-emphasis">Wesley Lima</span>,</h1>
+                        <h1>i'm a full-stack web developer.</h1>
+                    </div>
+                </div>
+                <div style={{height: '100vh', backgroundColor: 'greenyellow'}}> </div>
             </div>
         )
     }

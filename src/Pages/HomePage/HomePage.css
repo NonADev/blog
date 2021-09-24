@@ -2,22 +2,29 @@
 /* https://brittanychiang.com/#content */
 
 :root {
+    --primary-color: rgb(28, 32, 37, 1);
+    --primary-color-transparent: rgb(28, 32, 37, 1);
     --transition: all 0.25s cubic-bezier(.17,.67,.83,.67);
     --nav-height: 100px;
     --nav-scroll-height: 70px;
 }
 
 .homepage-capsule {
-    background-color: #1c2025;
+    /* background-color: #1c2025; */
+    background-color: #fff;
     min-height: 100vh;
     width: 100%;
 }
 
 .homepage-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 40px;
     height: var(--nav-height);
+    background-color: --primary-color-transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: calc(100% - 80px);
 
     /* TODO: adicionar essa boxshadow quando scollar para cima */
     /* box-shadow: 0 10px 15px -10px rgba(7, 7, 27, 0.5); */
@@ -26,6 +33,11 @@
 .homepage-logo-display {
     display: inherit;
     align-items: center;
+}
+
+.homepage-logo-display img {
+    width: 42px;
+    height: 42px;
 }
 
 .homepage-logo-display h2, .homepage-logo-display img, .homepage-logo-display {
@@ -50,12 +62,37 @@
     font-size: 14px;
 }
 
-.homepage-link-colection button {
-    background-color: transparent;
+.homepage-link-colection-button {
     color: #fff;
-    border: 1px solid red;
+    background-color: #323a42;
     border-radius: 5px;
-    padding: 11px 15px;
+    padding: 11px 20px;
+    font-weight: bold;
+}
+
+.homepage-body {
+    padding-top: 175px;
+    background-color: #1c2025;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homepage-presentation-display {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+}
+
+.homepage-presentation-display h1 {
+    color: #fff;
+    line-height: 1.1;
+    font-size: 40px;
+}
+
+.homepage-emphasis {
+    color: #056bd1;
 }
 
 @media (max-width: 768px) {
