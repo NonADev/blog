@@ -7,10 +7,12 @@
     --transition: all 0.25s cubic-bezier(.17,.67,.83,.67);
     --nav-height: 100px;
     --nav-scroll-height: 70px;
+
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
 }
 
 .homepage-capsule {
-    /* background-color: #1c2025; */
     background-color: #fff;
     min-height: 100vh;
     width: 100%;
@@ -58,41 +60,73 @@
     transition: var(--transition);
 }
 
-.homepage-link-colection a, .homepage-link-colection a:visited, .homepage-link-colection button {
+.homepage-link-colection a, .homepage-link-colection a:visited {
     font-size: 14px;
 }
 
 .homepage-link-colection-button {
     color: #fff;
-    background-color: #323a42;
+    background-color: var(--primary-color-lighter);
     border-radius: 5px;
     padding: 11px 20px;
-    font-weight: bold;
 }
 
 .homepage-body {
     padding-top: 175px;
-    background-color: #1c2025;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
 }
 
 .homepage-presentation-display {
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: initial;
     flex-direction: column;
 }
 
+.link-stilizer, .link-stilizer:visited {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: 500;
+}
+
 .homepage-presentation-display h1 {
     color: #fff;
     line-height: 1.1;
-    font-size: 40px;
+    font-size: 60px;
+    margin: 0px 0px 16px 4px;
+}
+
+.homepage-presentation-text {
+    color: #fff;
+    line-height: 1.1;
+    font-size: 20px;
+    margin: 0px 0px 12px 4px;
+    font-weight: normal;
+}
+
+.homepage-presentation-display h3 {
+    color: #fff;
+    line-height: 1.1;
+    font-size: 35px;
+    margin: 0px 0px 0px 4px;
+}
+
+.homepage-presentation-display p {
+    color: rgb(189, 189, 189);
+    max-width: 540px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5;
+    margin: 34px 0px 0px 4px;
 }
 
 .homepage-emphasis {
-    color: #056bd1;
+    color: var(--green) !important;
 }
 
 @media (max-width: 768px) {
