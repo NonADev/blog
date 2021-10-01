@@ -1,4 +1,4 @@
-import './HomePage.css';
+import './HomePage.scss';
 
 export default function HomePage(props) {
     return (
@@ -9,14 +9,22 @@ export default function HomePage(props) {
                         <img src="favicon.ico" alt="icone" />
                     </a>
                 </div>
-                <div className="homepage-link-colection">
-                    <a href="#2">ABOUT</a>
-                    <a href="#3">PORTFOLIO</a>
-                    <a href="#4">CONTACT</a>
-                    <a href="#5" className="homepage-link-colection-button">RESUME</a>
-                </div>
+                <ul className="homepage-link-colection">
+                    <li>
+                        <a href="#2">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#3">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#4">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#5" className="homepage-link-colection-button">RESUME</a>
+                    </li>
+                </ul>
             </nav>
-            <section className="homepage-body">
+            <section className="homepage-body pt-175" >
                 <div className="homepage-presentation-display">
                     <h2 className="homepage-emphasis homepage-presentation-text">Hello, i am </h2>
                     <h1><span >Wesley Lima</span>.</h1>
@@ -28,7 +36,20 @@ export default function HomePage(props) {
                     </p>
                 </div>
             </section>
-            <section style={{height: '100vh', backgroundColor: 'greenyellow'}}></section>
+            <section className="homepage-body">
+                <div className="homepage-projects-display">
+                    <div className="homepage-presentation-text">
+                        &lt;&lt;projeto 1&gt;&gt;
+                    </div>
+                    <div className="homepage-presentation-text">
+                        &lt;&lt;projeto 2&gt;&gt;
+                    </div>
+                    <div className="homepage-presentation-text">
+                        &lt;&lt;projeto 3&gt;&gt;
+                    </div>
+                </div>
+            </section>
+            <section style={{height: '100vh', backgroundColor: 'greenyellow', border: '1px solid red'}}></section>
         </div>
     );
 }
