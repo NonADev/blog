@@ -9,6 +9,9 @@ export default function HomePage(props) {
                         <img src="favicon.ico" alt="icone" />
                     </a>
                 </div>
+                <div className="homepage-burguer-button">
+                    burguer
+                </div>
                 <ul className="homepage-link-colection">
                     <li>
                         <a href="#2">ABOUT</a>
@@ -38,8 +41,20 @@ export default function HomePage(props) {
             </section>
             <section className="homepage-body">
                 <div className="homepage-projects-display">
-                    <div className="homepage-presentation-text">
-                        &lt;&lt;projeto 1&gt;&gt;
+                    <div className="homepage-project-card">
+                        <div className="homepage-project-card-header">
+                            <div className="folder">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <a href="#1"><img alt="redirecionamento"/></a>
+                        </div>
+                        <h4 className="homepage-project-card-title">titulo</h4>
+                        <p className="homepage-project-card-text">texto</p>
+                        <div className="homepage-project-card-chips">
+                            <chip>react</chip>
+                            <chip>scss</chip>
+                            <chip>java</chip>
+                        </div>
                     </div>
                     <div className="homepage-presentation-text">
                         &lt;&lt;projeto 2&gt;&gt;
